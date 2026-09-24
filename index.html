@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prossima Cumana</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🚆 Prossima Cumana</h1>
+    <p class="subtitle">Montesanto ⇄ Torregaveta</p>
+
+    <div class="field">
+      <label for="direction">Direzione</label>
+      <select id="direction">
+        <option value="MT">Montesanto → Torregaveta</option>
+        <option value="TM">Torregaveta → Montesanto</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="station">Stazione</label>
+      <select id="station"></select>
+    </div>
+
+    <div id="result" class="result" aria-live="polite"></div>
+
+    <details id="upcoming">
+      <summary>Prossimi passaggi</summary>
+      <ul id="upcoming-list"></ul>
+    </details>
+
+    <footer id="meta"></footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
