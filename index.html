@@ -3,33 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prossima Cumana</title>
+<title>Cumana</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="card">
-    <h1>🚆 Prossima Cumana</h1>
+    <h1>🚆 Cumana</h1>
     <p class="subtitle">Montesanto ⇄ Torregaveta</p>
 
-    <div class="field">
-      <label for="direction">Direzione</label>
-      <select id="direction">
-        <option value="MT">Montesanto → Torregaveta</option>
-        <option value="TM">Torregaveta → Montesanto</option>
-      </select>
-    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="next" role="tab" aria-selected="true">Prossimo treno</button>
+      <button class="tab-btn" data-tab="arrival" role="tab" aria-selected="false">Calcola arrivo</button>
+      <button class="tab-btn" data-tab="full" role="tab" aria-selected="false">Orario completo</button>
+    </nav>
 
-    <div class="field">
-      <label for="station">Stazione</label>
-      <select id="station"></select>
-    </div>
+    <!-- TAB 1: prossimo treno -->
+    <section id="tab-next" class="tab-panel active">
+      <div class="field">
+        <label for="next-direction">Direzione</label>
+        <select id="next-direction">
+          <option value="MT">Montesanto → Torregaveta</option>
+          <option value="TM">Torregaveta → Montesanto</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="next-station">Stazione</label>
+        <select id="next-station"></select>
+      </div>
 
-    <div id="result" class="result" aria-live="polite"></div>
+      <div id="next-result" class="result" aria-live="polite"></div>
 
-    <details id="upcoming">
-      <summary>Prossimi passaggi</summary>
-      <ul id="upcoming-list"></ul>
-    </details>
+      <details id="next-upcoming">
+        <summary>Prossimi passaggi</summary>
+        <ul id="next-upcoming-list" class="chip-list"></ul>
+      </details>
+    </section>
+
+    <!-- TAB 2: calcola arrivo -->
+    <section id="tab-arrival" class="tab-panel">
+      <div class="field">
+        <label for="arrival-direction">Direzione</label>
+        <select id="arrival-direction">
+          <option value="MT">Montesanto → Torregaveta</option>
+          <option value="TM">Torregaveta → Montesanto</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="arrival-from">Stazione di partenza</label>
+        <select id="arrival-from"></select>
+      </div>
+      <div class="field">
+        <label for="arrival-time">Orario del treno</label>
+        <select id="arrival-time"></select>
+      </div>
+      <div class="field">
+        <label for="arrival-to">Stazione di arrivo</label>
+        <select id="arrival-to"></select>
+      </div>
+
+      <div id="arrival-result" class="result" aria-live="polite"></div>
+    </section>
+
+    <!-- TAB 3: orario completo -->
+    <section id="tab-full" class="tab-panel">
+      <div class="field">
+        <label for="full-direction">Direzione</label>
+        <select id="full-direction">
+          <option value="MT">Montesanto → Torregaveta</option>
+          <option value="TM">Torregaveta → Montesanto</option>
+        </select>
+      </div>
+      <div id="full-list"></div>
+    </section>
 
     <footer id="meta"></footer>
   </main>

@@ -23,7 +23,7 @@ body {
 
 .card {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -40,6 +40,41 @@ h1 {
   margin: 0 0 24px;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  background: #1f232c;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 9px 6px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: #1a1200;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
 }
 
 .field {
@@ -106,7 +141,7 @@ summary {
   color: var(--text);
 }
 
-#upcoming-list {
+.chip-list {
   list-style: none;
   padding: 0;
   margin: 10px 0 0;
@@ -115,12 +150,81 @@ summary {
   gap: 8px;
 }
 
-#upcoming-list li {
+.chip-list li {
   background: #1f232c;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 6px 10px;
   font-size: 0.9rem;
+}
+
+.chip-list li.past {
+  opacity: 0.35;
+}
+
+.station-block {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.station-block summary {
+  padding: 12px 14px;
+  font-weight: 600;
+  background: #1f232c;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.station-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.station-block summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.station-block[open] summary::after {
+  content: "\2212";
+}
+
+.station-block .chip-list {
+  padding: 12px 14px;
+  margin: 0;
+}
+
+.leg-summary {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.route-list {
+  margin-top: 14px;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.route-list .stop {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.route-list .stop:last-child {
+  border-bottom: none;
+}
+
+.route-list .stop.endpoint {
+  color: var(--text);
+  font-weight: 600;
 }
 
 footer {

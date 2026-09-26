@@ -3,7 +3,7 @@
     "linea": "Cumana (Montesanto - Torregaveta)",
     "validita": "Orario in vigore dal giorno 11 settembre 2026",
     "fonte": "https://www.eavsrl.it (EAV)",
-    "note": "Orario giorni feriali (lun-sab). Non tiene conto di variazioni per festivi o scioperi."
+    "note": "Orario giorni feriali (lun-sab). Non tiene conto di variazioni per festivi, scioperi o servizi sostitutivi. Le ultime corse serali potrebbero avere fermate parziali non perfettamente verificate."
   },
   "directions": {
     "MT": {
@@ -772,7 +772,3005 @@
           "21:56",
           "22:26"
         ]
-      }
+      },
+      "trains": [
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "4:54"
+          },
+          {
+            "station": "Mostra",
+            "time": "4:56"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "4:58"
+          },
+          {
+            "station": "Agnano",
+            "time": "5:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "5:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "5:04"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "5:09"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "5:13"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "5:16"
+          },
+          {
+            "station": "Lucrino",
+            "time": "5:19"
+          },
+          {
+            "station": "Baia",
+            "time": "5:21"
+          },
+          {
+            "station": "Fusaro",
+            "time": "5:24"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "5:27"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "5:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "5:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "5:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "5:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "5:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "5:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "5:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "5:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "5:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "5:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "5:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "5:47"
+          },
+          {
+            "station": "Baia",
+            "time": "5:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "5:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "5:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "5:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "5:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "5:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "5:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "5:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "6:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "6:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "6:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "6:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "6:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "6:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "6:17"
+          },
+          {
+            "station": "Baia",
+            "time": "6:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "6:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "6:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "6:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "6:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "6:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "6:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "6:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "6:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "6:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "6:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "6:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "6:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "6:47"
+          },
+          {
+            "station": "Baia",
+            "time": "6:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "6:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "6:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "6:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "6:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "6:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "6:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "6:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "6:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "6:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "6:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "6:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "6:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "7:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "7:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "7:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "7:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "7:17"
+          },
+          {
+            "station": "Baia",
+            "time": "7:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "7:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "7:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "7:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "7:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "7:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "7:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "7:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "7:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "7:47"
+          },
+          {
+            "station": "Baia",
+            "time": "7:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "7:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "7:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "7:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "7:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "8:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "8:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "8:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "8:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "8:17"
+          },
+          {
+            "station": "Baia",
+            "time": "8:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "8:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "8:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "8:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "8:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "8:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "8:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "8:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "8:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "8:47"
+          },
+          {
+            "station": "Baia",
+            "time": "8:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "8:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "8:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "8:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "8:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "9:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "9:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "9:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "9:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "9:17"
+          },
+          {
+            "station": "Baia",
+            "time": "9:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "9:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "9:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "9:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "9:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "9:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "9:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "9:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "9:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "9:47"
+          },
+          {
+            "station": "Baia",
+            "time": "9:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "9:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "9:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "9:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "9:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "10:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "10:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "10:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "10:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "10:17"
+          },
+          {
+            "station": "Baia",
+            "time": "10:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "10:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "10:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "10:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "10:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "10:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "10:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "10:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "10:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "10:47"
+          },
+          {
+            "station": "Baia",
+            "time": "10:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "10:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "10:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "10:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "10:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "11:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "11:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "11:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "11:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "11:17"
+          },
+          {
+            "station": "Baia",
+            "time": "11:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "11:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "11:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "11:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "11:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "11:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "11:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "11:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "11:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "11:47"
+          },
+          {
+            "station": "Baia",
+            "time": "11:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "11:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "11:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "11:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "11:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "12:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "12:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "12:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "12:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "12:17"
+          },
+          {
+            "station": "Baia",
+            "time": "12:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "12:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "12:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "12:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "12:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "12:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "12:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "12:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "12:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "12:47"
+          },
+          {
+            "station": "Baia",
+            "time": "12:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "12:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "12:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "12:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "12:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "13:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "13:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "13:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "13:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "13:17"
+          },
+          {
+            "station": "Baia",
+            "time": "13:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "13:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "13:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "13:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "13:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "13:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "13:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "13:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "13:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "13:47"
+          },
+          {
+            "station": "Baia",
+            "time": "13:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "13:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "13:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "13:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "13:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "14:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "14:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "14:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "14:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "14:17"
+          },
+          {
+            "station": "Baia",
+            "time": "14:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "14:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "14:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "14:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "14:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "14:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "14:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "14:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "14:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "14:47"
+          },
+          {
+            "station": "Baia",
+            "time": "14:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "14:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "14:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "14:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "14:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "15:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "15:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "15:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "15:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "15:17"
+          },
+          {
+            "station": "Baia",
+            "time": "15:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "15:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "15:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "15:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "15:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "15:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "15:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "15:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "15:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "15:47"
+          },
+          {
+            "station": "Baia",
+            "time": "15:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "15:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "15:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "15:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "15:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "16:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "16:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "16:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "16:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "16:17"
+          },
+          {
+            "station": "Baia",
+            "time": "16:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "16:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "16:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "16:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "16:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "16:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "16:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "16:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "16:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "16:47"
+          },
+          {
+            "station": "Baia",
+            "time": "16:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "16:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "16:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "16:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "16:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "17:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "17:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "17:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "17:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "17:17"
+          },
+          {
+            "station": "Baia",
+            "time": "17:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "17:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "17:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "17:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "17:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "17:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "17:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "17:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "17:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "17:47"
+          },
+          {
+            "station": "Baia",
+            "time": "17:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "17:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "17:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "17:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "17:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "18:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "18:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "18:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "18:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "18:17"
+          },
+          {
+            "station": "Baia",
+            "time": "18:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "18:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "18:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "18:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:08"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:10"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:12"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:15"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:16"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "18:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "18:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "18:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "18:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "18:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "18:47"
+          },
+          {
+            "station": "Baia",
+            "time": "18:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "18:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "18:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "18:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:38"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:40"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:42"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:45"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:46"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "18:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "19:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "19:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "19:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "19:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "19:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "19:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "19:17"
+          },
+          {
+            "station": "Baia",
+            "time": "19:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "19:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "19:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "19:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:07"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "19:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "19:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "19:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "19:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "19:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "19:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "19:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "19:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "19:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "19:47"
+          },
+          {
+            "station": "Baia",
+            "time": "19:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "19:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "19:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "19:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:34"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:37"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "19:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "19:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "19:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "20:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "20:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "20:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "20:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "20:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "20:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "20:17"
+          },
+          {
+            "station": "Baia",
+            "time": "20:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "20:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "20:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "20:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "20:04"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "20:07"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "20:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "20:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "20:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "20:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "20:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "20:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "20:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "20:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "20:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "20:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "20:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "20:47"
+          },
+          {
+            "station": "Baia",
+            "time": "20:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "20:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "20:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "20:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "20:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "20:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "20:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "20:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "21:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "21:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "21:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "21:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "21:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "21:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "21:17"
+          },
+          {
+            "station": "Baia",
+            "time": "21:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "21:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "21:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "21:15"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "21:19"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "21:23"
+          },
+          {
+            "station": "Mostra",
+            "time": "21:25"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "21:27"
+          },
+          {
+            "station": "Agnano",
+            "time": "21:30"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "21:32"
+          },
+          {
+            "station": "Dazio",
+            "time": "21:33"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "21:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "21:41"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "21:44"
+          },
+          {
+            "station": "Lucrino",
+            "time": "21:47"
+          },
+          {
+            "station": "Baia",
+            "time": "21:50"
+          },
+          {
+            "station": "Fusaro",
+            "time": "21:53"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "21:56"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "21:45"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "21:49"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "21:53"
+          },
+          {
+            "station": "Mostra",
+            "time": "21:55"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "21:57"
+          },
+          {
+            "station": "Agnano",
+            "time": "22:00"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "22:02"
+          },
+          {
+            "station": "Dazio",
+            "time": "22:03"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "22:08"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "22:11"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "22:14"
+          },
+          {
+            "station": "Lucrino",
+            "time": "22:17"
+          },
+          {
+            "station": "Baia",
+            "time": "22:20"
+          },
+          {
+            "station": "Fusaro",
+            "time": "22:23"
+          },
+          {
+            "station": "Torregaveta",
+            "time": "22:26"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "22:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "22:05"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:08"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "22:20"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "22:25"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:28"
+          }
+        ],
+        [
+          {
+            "station": "Montesanto",
+            "time": "22:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "22:45"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:48"
+          }
+        ]
+      ]
     },
     "TM": {
       "label": "Torregaveta → Montesanto",
@@ -1537,7 +4535,2995 @@
           "21:47",
           "22:17"
         ]
-      }
+      },
+      "trains": [
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "4:50"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "4:53"
+          },
+          {
+            "station": "Montesanto",
+            "time": "4:57"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "5:20"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "5:23"
+          },
+          {
+            "station": "Montesanto",
+            "time": "5:27"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "5:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "5:33"
+          },
+          {
+            "station": "Montesanto",
+            "time": "5:37"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "5:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "5:39"
+          },
+          {
+            "station": "Baia",
+            "time": "5:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "5:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "5:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "5:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "5:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "5:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "6:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "6:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "6:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "6:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "6:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "6:17"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "5:44"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "5:47"
+          },
+          {
+            "station": "Montesanto",
+            "time": "5:51"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "6:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:03"
+          },
+          {
+            "station": "Montesanto",
+            "time": "6:07"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "6:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "6:09"
+          },
+          {
+            "station": "Baia",
+            "time": "6:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "6:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "6:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "6:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "6:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "6:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "6:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "6:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "6:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "6:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "6:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "6:47"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "6:30"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "6:33"
+          },
+          {
+            "station": "Montesanto",
+            "time": "6:37"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "6:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "6:39"
+          },
+          {
+            "station": "Baia",
+            "time": "6:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "6:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "6:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "6:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "6:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "6:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "7:17"
+          }
+        ],
+        [
+          {
+            "station": "Fuorigrotta",
+            "time": "7:00"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:03"
+          },
+          {
+            "station": "Montesanto",
+            "time": "7:07"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "7:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "7:09"
+          },
+          {
+            "station": "Baia",
+            "time": "7:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "7:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "7:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "7:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "7:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "7:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "7:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "7:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "7:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "7:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "7:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "7:39"
+          },
+          {
+            "station": "Baia",
+            "time": "7:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "7:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "7:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "7:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "7:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "7:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "8:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "7:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "7:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "7:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "7:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "7:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "7:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "8:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "8:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "8:09"
+          },
+          {
+            "station": "Baia",
+            "time": "8:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "8:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "8:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "8:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "8:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "8:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "8:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "8:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "8:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "8:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "8:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "8:39"
+          },
+          {
+            "station": "Baia",
+            "time": "8:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "8:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "8:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "8:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "8:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "8:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "9:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "8:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "8:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "8:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "8:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "8:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "8:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "9:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "9:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "9:09"
+          },
+          {
+            "station": "Baia",
+            "time": "9:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "9:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "9:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "9:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "9:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "9:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "9:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "9:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "9:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "9:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "9:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "9:39"
+          },
+          {
+            "station": "Baia",
+            "time": "9:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "9:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "9:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "9:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "9:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "9:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "10:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "9:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "9:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "9:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "9:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "9:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "9:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "10:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "10:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "10:09"
+          },
+          {
+            "station": "Baia",
+            "time": "10:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "10:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "10:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "10:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "10:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "10:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "10:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "10:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "10:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "10:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "10:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "10:39"
+          },
+          {
+            "station": "Baia",
+            "time": "10:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "10:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "10:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "10:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "10:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "10:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "11:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "10:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "10:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "10:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "10:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "10:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "10:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "11:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "11:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "11:09"
+          },
+          {
+            "station": "Baia",
+            "time": "11:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "11:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "11:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "11:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "11:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "11:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "11:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "11:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "11:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "11:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "11:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "11:39"
+          },
+          {
+            "station": "Baia",
+            "time": "11:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "11:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "11:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "11:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "11:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "11:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "12:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "11:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "11:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "11:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "11:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "11:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "11:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "12:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "12:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "12:09"
+          },
+          {
+            "station": "Baia",
+            "time": "12:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "12:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "12:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "12:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "12:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "12:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "12:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "12:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "12:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "12:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "12:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "12:39"
+          },
+          {
+            "station": "Baia",
+            "time": "12:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "12:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "12:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "12:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "12:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "12:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "13:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "12:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "12:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "12:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "12:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "12:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "12:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "13:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "13:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "13:09"
+          },
+          {
+            "station": "Baia",
+            "time": "13:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "13:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "13:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "13:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "13:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "13:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "13:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "13:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "13:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "13:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "13:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "13:39"
+          },
+          {
+            "station": "Baia",
+            "time": "13:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "13:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "13:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "13:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "13:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "13:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "14:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "13:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "13:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "13:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "13:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "13:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "13:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "14:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "14:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "14:09"
+          },
+          {
+            "station": "Baia",
+            "time": "14:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "14:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "14:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "14:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "14:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "14:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "14:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "14:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "14:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "14:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "14:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "14:39"
+          },
+          {
+            "station": "Baia",
+            "time": "14:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "14:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "14:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "14:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "14:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "14:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "15:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "14:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "14:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "14:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "14:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "14:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "14:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "15:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "15:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "15:09"
+          },
+          {
+            "station": "Baia",
+            "time": "15:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "15:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "15:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "15:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "15:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "15:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "15:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "15:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "15:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "15:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "15:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "15:39"
+          },
+          {
+            "station": "Baia",
+            "time": "15:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "15:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "15:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "15:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "15:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "15:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "16:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "15:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "15:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "15:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "15:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "15:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "15:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "16:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "16:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "16:09"
+          },
+          {
+            "station": "Baia",
+            "time": "16:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "16:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "16:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "16:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "16:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "16:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "16:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "16:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "16:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "16:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "16:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "16:39"
+          },
+          {
+            "station": "Baia",
+            "time": "16:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "16:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "16:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "16:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "16:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "16:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "17:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "16:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "16:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "16:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "16:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "16:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "16:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "17:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "17:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "17:09"
+          },
+          {
+            "station": "Baia",
+            "time": "17:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "17:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "17:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "17:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "17:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "17:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "17:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "17:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "17:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "17:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "17:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "17:39"
+          },
+          {
+            "station": "Baia",
+            "time": "17:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "17:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "17:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "17:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "17:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "17:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "18:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "17:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "17:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "17:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "17:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "17:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "17:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "18:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "18:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "18:09"
+          },
+          {
+            "station": "Baia",
+            "time": "18:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "18:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "18:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "18:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "18:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "18:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "18:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "18:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "18:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "18:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "18:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "18:39"
+          },
+          {
+            "station": "Baia",
+            "time": "18:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "18:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "18:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "18:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "18:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "18:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "19:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "19:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "19:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "19:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "19:17"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "18:46"
+          },
+          {
+            "station": "Agnano",
+            "time": "18:48"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "18:50"
+          },
+          {
+            "station": "Mostra",
+            "time": "18:52"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "18:55"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "18:58"
+          },
+          {
+            "station": "Montesanto",
+            "time": "19:02"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "19:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "19:09"
+          },
+          {
+            "station": "Baia",
+            "time": "19:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "19:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "19:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "19:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "19:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "19:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "19:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "19:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "19:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "19:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "19:47"
+          }
+        ],
+        [
+          {
+            "station": "Bagnoli",
+            "time": "19:16"
+          },
+          {
+            "station": "Agnano",
+            "time": "19:18"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "19:20"
+          },
+          {
+            "station": "Mostra",
+            "time": "19:22"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "19:25"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "19:28"
+          },
+          {
+            "station": "Montesanto",
+            "time": "19:32"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "19:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "19:39"
+          },
+          {
+            "station": "Baia",
+            "time": "19:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "19:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "19:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "19:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "19:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "19:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "20:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "20:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "20:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "20:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "20:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "20:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "20:17"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "20:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "20:09"
+          },
+          {
+            "station": "Baia",
+            "time": "20:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "20:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "20:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "20:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "20:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "20:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "20:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "20:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "20:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "20:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "20:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "20:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "20:47"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "20:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "20:39"
+          },
+          {
+            "station": "Baia",
+            "time": "20:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "20:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "20:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "20:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "20:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "20:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "21:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "21:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "21:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "21:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "21:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "21:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "21:17"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "21:05"
+          },
+          {
+            "station": "Fusaro",
+            "time": "21:09"
+          },
+          {
+            "station": "Baia",
+            "time": "21:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "21:14"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "21:17"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "21:20"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "21:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "21:28"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "21:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "21:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "21:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "21:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "21:40"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "21:43"
+          },
+          {
+            "station": "Montesanto",
+            "time": "21:47"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "21:35"
+          },
+          {
+            "station": "Fusaro",
+            "time": "21:39"
+          },
+          {
+            "station": "Baia",
+            "time": "21:42"
+          },
+          {
+            "station": "Lucrino",
+            "time": "21:44"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "21:47"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "21:50"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "21:54"
+          },
+          {
+            "station": "Dazio",
+            "time": "21:58"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "22:01"
+          },
+          {
+            "station": "Agnano",
+            "time": "22:03"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "22:05"
+          },
+          {
+            "station": "Mostra",
+            "time": "22:07"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:10"
+          },
+          {
+            "station": "Corso Vittorio Emanuele",
+            "time": "22:13"
+          },
+          {
+            "station": "Montesanto",
+            "time": "22:17"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "22:06"
+          },
+          {
+            "station": "Fusaro",
+            "time": "22:09"
+          },
+          {
+            "station": "Baia",
+            "time": "22:12"
+          },
+          {
+            "station": "Lucrino",
+            "time": "22:15"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "22:18"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "22:21"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "22:24"
+          },
+          {
+            "station": "Dazio",
+            "time": "22:29"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "22:31"
+          },
+          {
+            "station": "Agnano",
+            "time": "22:33"
+          },
+          {
+            "station": "Edenlandia",
+            "time": "22:35"
+          },
+          {
+            "station": "Mostra",
+            "time": "22:37"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:39"
+          }
+        ],
+        [
+          {
+            "station": "Torregaveta",
+            "time": "22:30"
+          },
+          {
+            "station": "Lucrino",
+            "time": "22:36"
+          },
+          {
+            "station": "Arco Felice",
+            "time": "22:38"
+          },
+          {
+            "station": "Pozzuoli",
+            "time": "22:41"
+          },
+          {
+            "station": "Gerolomini",
+            "time": "22:44"
+          },
+          {
+            "station": "Bagnoli",
+            "time": "22:49"
+          },
+          {
+            "station": "Agnano",
+            "time": "22:51"
+          },
+          {
+            "station": "Mostra",
+            "time": "22:54"
+          },
+          {
+            "station": "Fuorigrotta",
+            "time": "22:55"
+          }
+        ]
+      ]
     }
   }
 }
