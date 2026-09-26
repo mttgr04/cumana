@@ -163,8 +163,10 @@ const searchUpcomingSummary = document.getElementById("search-upcoming-summary")
 const searchDeadlineField = document.getElementById("search-deadline-field");
 const searchDeadlineInput = document.getElementById("search-deadline");
 const modeButtons = document.querySelectorAll(".mode-btn");
+const dayButtons = document.querySelectorAll(".day-btn");
 
 let searchMode = "now";
+let searchDay = "today";
 
 function canonicalOrder() {
   return data.directions.MT.stationsOrder;
@@ -212,23 +214,25 @@ function candidateTrains(from, to) {
   return results;
 }
 
-function renderSearchNow(from, to, future) {
+function renderSearchNow(from, to, future, isToday) {
   searchUpcomingSummary.textContent = "Prossime corse utili";
 
+  const dayLabel = isToday ? "oggi" : "domani";
+
   if (future.length === 0) {
-    searchResult.innerHTML = `<div class="none">Nessuna corsa utile oggi da ${from} ad ${to}.</div>`;
+    searchResult.innerHTML = `<div class="none">Nessuna corsa utile ${dayLabel} da ${from} ad ${to}.</div>`;
     return;
   }
 
-  const now = new Date();
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
   const next = future[0];
-  const waitMins = timeToMinutes(next.depTime) - nowMinutes;
   const duration = timeToMinutes(next.arrTime) - timeToMinutes(next.depTime);
+  const waitLabel = isToday
+    ? `tra ${minutesToLabel(timeToMinutes(next.depTime) - (new Date().getHours() * 60 + new Date().getMinutes()))}`
+    : "domani";
 
   searchResult.innerHTML = `
     <div class="big-time">${next.depTime}</div>
-    <div class="wait">da ${from} · tra ${minutesToLabel(waitMins)}</div>
+    <div class="wait">da ${from} · ${waitLabel}</div>
     <div class="leg-summary">Arrivo a ${to} alle ${next.arrTime} · durata ${minutesToLabel(duration)}</div>
     ${routeBadgesHtml(next.dirKey, next.train)}
   `;
@@ -240,9 +244,10 @@ function renderSearchNow(from, to, future) {
   });
 }
 
-function renderSearchDeadline(from, to, future) {
+function renderSearchDeadline(from, to, future, isToday) {
   searchUpcomingSummary.textContent = "Altre corse utili";
 
+  const dayLabel = isToday ? "oggi" : "domani";
   const deadlineValue = searchDeadlineInput.value;
   if (!deadlineValue) {
     searchResult.innerHTML = `<div class="none">Scegli l'orario entro cui vuoi arrivare a ${to}.</div>`;
@@ -254,23 +259,23 @@ function renderSearchDeadline(from, to, future) {
 
   if (valid.length === 0) {
     const earliestArrival = future[0];
-    searchResult.innerHTML = `<div class="none">Nessuna corsa da ${from} arriva a ${to} entro le ${deadlineValue}.<br>${
+    searchResult.innerHTML = `<div class="none">Nessuna corsa ${dayLabel} da ${from} arriva a ${to} entro le ${deadlineValue}.<br>${
       earliestArrival
         ? `La più veloce arriva alle <strong>${earliestArrival.arrTime}</strong> (partenza ${earliestArrival.depTime}).`
-        : `Non ci sono più corse utili oggi da ${from}.`
+        : `Non ci sono corse utili ${dayLabel} da ${from}.`
     }</div>`;
     return;
   }
 
   const best = valid[valid.length - 1];
-  const now = new Date();
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
-  const waitMins = timeToMinutes(best.depTime) - nowMinutes;
   const duration = timeToMinutes(best.arrTime) - timeToMinutes(best.depTime);
+  const waitLabel = isToday
+    ? `tra ${minutesToLabel(timeToMinutes(best.depTime) - (new Date().getHours() * 60 + new Date().getMinutes()))}`
+    : "domani";
 
   searchResult.innerHTML = `
     <div class="big-time">${best.depTime}</div>
-    <div class="wait">ultima corsa utile da ${from} · tra ${minutesToLabel(waitMins)}</div>
+    <div class="wait">ultima corsa utile da ${from} · ${waitLabel}</div>
     <div class="leg-summary">Arrivo a ${to} alle ${best.arrTime} (entro le ${deadlineValue}) · durata ${minutesToLabel(duration)}</div>
     ${routeBadgesHtml(best.dirKey, best.train)}
   `;
@@ -291,16 +296,16 @@ function renderSearch() {
   if (!from || !to || from === to) return;
 
   const all = candidateTrains(from, to);
-  const now = new Date();
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const isToday = searchDay === "today";
+  const nowMinutes = isToday ? new Date().getHours() * 60 + new Date().getMinutes() : -1;
   const future = all.filter((r) => timeToMinutes(r.depTime) >= nowMinutes);
 
   searchUpcomingList.innerHTML = "";
 
   if (searchMode === "deadline") {
-    renderSearchDeadline(from, to, future);
+    renderSearchDeadline(from, to, future, isToday);
   } else {
-    renderSearchNow(from, to, future);
+    renderSearchNow(from, to, future, isToday);
   }
 }
 
@@ -324,6 +329,16 @@ function setSearchMode(mode) {
   renderSearch();
 }
 
+function setSearchDay(day) {
+  searchDay = day;
+  dayButtons.forEach((b) => {
+    const active = b.dataset.day === day;
+    b.classList.toggle("active", active);
+    b.setAttribute("aria-selected", String(active));
+  });
+  renderSearch();
+}
+
 function initSearchTab() {
   const prefs = loadPrefs();
   populateSearchStations();
@@ -335,6 +350,7 @@ function initSearchTab() {
 
   searchDeadlineInput.value = prefs.searchDeadline || defaultDeadline();
   setSearchMode(prefs.searchMode === "deadline" ? "deadline" : "now");
+  setSearchDay("today"); // sempre "oggi" all'apertura, per evitare confusione
 
   searchFrom.addEventListener("change", () => {
     populateSearchTo();
@@ -346,6 +362,7 @@ function initSearchTab() {
     renderSearch();
   });
   modeButtons.forEach((b) => b.addEventListener("click", () => setSearchMode(b.dataset.mode)));
+  dayButtons.forEach((b) => b.addEventListener("click", () => setSearchDay(b.dataset.day)));
   searchDeadlineInput.addEventListener("change", () => {
     savePrefs({ searchDeadline: searchDeadlineInput.value });
     renderSearch();

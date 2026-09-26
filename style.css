@@ -308,6 +308,30 @@ summary {
   color: #1a1200;
 }
 
+.day-toggle {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.day-btn {
+  flex: 1;
+  padding: 6px 6px;
+  background: #1f232c;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.day-btn.active {
+  background: rgba(255, 106, 0, 0.15);
+  color: var(--accent);
+  border-color: rgba(255, 106, 0, 0.4);
+}
+
 input[type="time"] {
   width: 100%;
   padding: 12px 14px;

@@ -1,4 +1,4 @@
-const CACHE_NAME = "cumana-v5";
+const CACHE_NAME = "cumana-v6";
 const SHELL_FILES = [
   "./",
   "index.html",
