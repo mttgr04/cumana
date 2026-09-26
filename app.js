@@ -493,6 +493,62 @@ function initFullTab() {
   fullDirection.addEventListener("change", renderFull);
 }
 
+// ---------- installazione PWA ----------
+
+const installBtn = document.getElementById("install-btn");
+const installHint = document.getElementById("install-hint");
+const installHintClose = document.getElementById("install-hint-close");
+
+let deferredInstallPrompt = null;
+
+function isStandalone() {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true
+  );
+}
+
+function isIOS() {
+  return /iphone|ipad|ipod/i.test(navigator.userAgent);
+}
+
+function initInstallButton() {
+  if (isStandalone()) return; // già installata, nessun bottone
+
+  if (isIOS()) {
+    // Safari iOS non supporta beforeinstallprompt: mostriamo subito il bottone
+    // che rivela le istruzioni manuali.
+    installBtn.hidden = false;
+    installBtn.addEventListener("click", () => {
+      installHint.hidden = false;
+      installBtn.hidden = true;
+    });
+  }
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    installBtn.hidden = false;
+  });
+
+  installBtn.addEventListener("click", async () => {
+    if (!deferredInstallPrompt) return;
+    installBtn.hidden = true;
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+  });
+
+  window.addEventListener("appinstalled", () => {
+    installBtn.hidden = true;
+    installHint.hidden = true;
+  });
+
+  installHintClose.addEventListener("click", () => {
+    installHint.hidden = true;
+  });
+}
+
 // ---------- init ----------
 
 async function init() {
@@ -507,6 +563,7 @@ async function init() {
   initSearchTab();
   initArrivalTab();
   initFullTab();
+  initInstallButton();
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").catch(() => {});
