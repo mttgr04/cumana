@@ -19,6 +19,48 @@ function addOption(select, value, label) {
   select.appendChild(opt);
 }
 
+function findTrainAt(dirKey, station, time) {
+  const trains = data.directions[dirKey].trains;
+  for (const tr of trains) {
+    const stop = tr.stops.find((s) => s.station === station && s.time === time);
+    if (stop) return tr;
+  }
+  return null;
+}
+
+function routeBadgesHtml(dirKey, train) {
+  if (!train) return "";
+  const order = data.directions[dirKey].stationsOrder;
+  const terminus = train.stops[train.stops.length - 1].station;
+  const isFull = terminus === order[order.length - 1];
+  const parts = [];
+  if (!isFull) parts.push(`<span class="badge partial">Ferma a ${terminus}</span>`);
+  if (train.guaranteed) parts.push(`<span class="badge guaranteed">Garantito in sciopero</span>`);
+  if (!parts.length) return "";
+  return `<div class="badges">${parts.join("")}</div>`;
+}
+
+// ---------- localStorage preferences ----------
+
+const PREF_KEY = "cumana:prefs";
+
+function loadPrefs() {
+  try {
+    return JSON.parse(localStorage.getItem(PREF_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function savePrefs(patch) {
+  try {
+    const current = loadPrefs();
+    localStorage.setItem(PREF_KEY, JSON.stringify({ ...current, ...patch }));
+  } catch {
+    // ignore (private browsing / storage disabled)
+  }
+}
+
 // ---------- Tabs ----------
 
 function initTabs() {
@@ -54,7 +96,8 @@ function populateNextStations() {
 }
 
 function renderNext() {
-  const dir = data.directions[nextDirection.value];
+  const dirKey = nextDirection.value;
+  const dir = data.directions[dirKey];
   const station = nextStation.value;
   const times = dir.schedule[station] || [];
 
@@ -74,10 +117,12 @@ function renderNext() {
 
   const next = upcomingToday[0];
   const waitMins = next.mins - nowMinutes;
+  const train = findTrainAt(dirKey, station, next.label);
 
   nextResult.innerHTML = `
     <div class="big-time">${next.label}</div>
     <div class="wait">da ${station} · tra ${minutesToLabel(waitMins)}</div>
+    ${routeBadgesHtml(dirKey, train)}
   `;
 
   upcomingToday.slice(1, 6).forEach((t) => {
@@ -88,17 +133,140 @@ function renderNext() {
 }
 
 function initNextTab() {
+  const prefs = loadPrefs();
+  if (prefs.nextDirection) nextDirection.value = prefs.nextDirection;
   populateNextStations();
+  if (prefs.nextStation && data.directions[nextDirection.value].stationsOrder.includes(prefs.nextStation)) {
+    nextStation.value = prefs.nextStation;
+  }
   renderNext();
+
   nextDirection.addEventListener("change", () => {
     populateNextStations();
+    savePrefs({ nextDirection: nextDirection.value, nextStation: nextStation.value });
     renderNext();
   });
-  nextStation.addEventListener("change", renderNext);
+  nextStation.addEventListener("change", () => {
+    savePrefs({ nextStation: nextStation.value });
+    renderNext();
+  });
   setInterval(renderNext, 30000);
 }
 
-// ---------- Tab 2: calcola arrivo ----------
+// ---------- Tab 2: cerca tratta (da -> a) ----------
+
+const searchFrom = document.getElementById("search-from");
+const searchTo = document.getElementById("search-to");
+const searchResult = document.getElementById("search-result");
+const searchUpcomingList = document.getElementById("search-upcoming-list");
+
+function canonicalOrder() {
+  return data.directions.MT.stationsOrder;
+}
+
+function directionFor(from, to) {
+  const order = canonicalOrder();
+  return order.indexOf(from) < order.indexOf(to) ? "MT" : "TM";
+}
+
+function populateSearchStations() {
+  const order = canonicalOrder();
+  const prevFrom = searchFrom.value;
+  const prevTo = searchTo.value;
+
+  searchFrom.innerHTML = "";
+  order.forEach((s) => addOption(searchFrom, s, s));
+  if (order.includes(prevFrom)) searchFrom.value = prevFrom;
+
+  populateSearchTo();
+  if (order.includes(prevTo) && prevTo !== searchFrom.value) searchTo.value = prevTo;
+}
+
+function populateSearchTo() {
+  const order = canonicalOrder();
+  const from = searchFrom.value;
+  const prevTo = searchTo.value;
+  searchTo.innerHTML = "";
+  order.filter((s) => s !== from).forEach((s) => addOption(searchTo, s, s));
+  if (order.includes(prevTo) && prevTo !== from) searchTo.value = prevTo;
+}
+
+function candidateTrains(from, to) {
+  const dirKey = directionFor(from, to);
+  const dir = data.directions[dirKey];
+  const results = [];
+  dir.trains.forEach((tr) => {
+    const fromStop = tr.stops.find((s) => s.station === from);
+    const toStop = tr.stops.find((s) => s.station === to);
+    if (fromStop && toStop) {
+      results.push({ dirKey, train: tr, depTime: fromStop.time, arrTime: toStop.time });
+    }
+  });
+  results.sort((a, b) => timeToMinutes(a.depTime) - timeToMinutes(b.depTime));
+  return results;
+}
+
+function renderSearch() {
+  const from = searchFrom.value;
+  const to = searchTo.value;
+  if (!from || !to || from === to) return;
+
+  const all = candidateTrains(from, to);
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const upcoming = all.filter((r) => timeToMinutes(r.depTime) >= nowMinutes);
+
+  searchUpcomingList.innerHTML = "";
+
+  if (upcoming.length === 0) {
+    const firstTomorrow = all[0];
+    searchResult.innerHTML = `<div class="none">Nessuna corsa utile oggi da ${from} ad ${to}.<br>${
+      firstTomorrow ? `La prima di domani parte alle <strong>${firstTomorrow.depTime}</strong>.` : ""
+    }</div>`;
+    return;
+  }
+
+  const next = upcoming[0];
+  const waitMins = timeToMinutes(next.depTime) - nowMinutes;
+  const duration = timeToMinutes(next.arrTime) - timeToMinutes(next.depTime);
+
+  searchResult.innerHTML = `
+    <div class="big-time">${next.depTime}</div>
+    <div class="wait">da ${from} · tra ${minutesToLabel(waitMins)}</div>
+    <div class="leg-summary">Arrivo a ${to} alle ${next.arrTime} · durata ${minutesToLabel(duration)}</div>
+    ${routeBadgesHtml(next.dirKey, next.train)}
+  `;
+
+  upcoming.slice(1, 6).forEach((r) => {
+    const li = document.createElement("li");
+    li.textContent = `${r.depTime} → ${r.arrTime}`;
+    searchUpcomingList.appendChild(li);
+  });
+}
+
+function initSearchTab() {
+  const prefs = loadPrefs();
+  populateSearchStations();
+  if (prefs.searchFrom && canonicalOrder().includes(prefs.searchFrom)) searchFrom.value = prefs.searchFrom;
+  populateSearchTo();
+  if (prefs.searchTo && canonicalOrder().includes(prefs.searchTo) && prefs.searchTo !== searchFrom.value) {
+    searchTo.value = prefs.searchTo;
+  }
+  renderSearch();
+
+  searchFrom.addEventListener("change", () => {
+    populateSearchTo();
+    savePrefs({ searchFrom: searchFrom.value, searchTo: searchTo.value });
+    renderSearch();
+  });
+  searchTo.addEventListener("change", () => {
+    savePrefs({ searchTo: searchTo.value });
+    renderSearch();
+  });
+  setInterval(renderSearch, 30000);
+}
+
+// ---------- Tab 3: calcola arrivo ----------
 
 const arrivalDirection = document.getElementById("arrival-direction");
 const arrivalFrom = document.getElementById("arrival-from");
@@ -120,10 +288,10 @@ function populateArrivalTime() {
   arrivalTime.innerHTML = "";
 
   const options = [];
-  dir.trains.forEach((stops, idx) => {
-    const pos = stops.findIndex((st) => st.station === fromStation);
-    if (pos !== -1 && pos < stops.length - 1) {
-      options.push({ time: stops[pos].time, idx });
+  dir.trains.forEach((tr, idx) => {
+    const pos = tr.stops.findIndex((st) => st.station === fromStation);
+    if (pos !== -1 && pos < tr.stops.length - 1) {
+      options.push({ time: tr.stops[pos].time, idx });
     }
   });
   options.sort((a, b) => timeToMinutes(a.time) - timeToMinutes(b.time));
@@ -141,20 +309,22 @@ function populateArrivalTo() {
   arrivalTo.innerHTML = "";
   if (trainIdx === "") return;
 
-  const stops = dir.trains[trainIdx];
+  const stops = dir.trains[trainIdx].stops;
   const pos = stops.findIndex((st) => st.station === fromStation);
   stops.slice(pos + 1).forEach((st) => addOption(arrivalTo, st.station, `${st.station} (${st.time})`));
 }
 
 function renderArrivalResult() {
-  const dir = data.directions[arrivalDirection.value];
+  const dirKey = arrivalDirection.value;
+  const dir = data.directions[dirKey];
   const fromStation = arrivalFrom.value;
   const trainIdx = arrivalTime.value;
   const toStation = arrivalTo.value;
 
   if (trainIdx === "" || !toStation) return;
 
-  const stops = dir.trains[trainIdx];
+  const train = dir.trains[trainIdx];
+  const stops = train.stops;
   const pos = stops.findIndex((st) => st.station === fromStation);
   const destPos = stops.findIndex((st) => st.station === toStation);
   if (pos === -1 || destPos === -1) return;
@@ -175,6 +345,7 @@ function renderArrivalResult() {
     <div class="big-time">${arrTime}</div>
     <div class="wait">arrivo a ${toStation}</div>
     <div class="leg-summary">Partenza da ${fromStation} alle ${depTime} · durata ${minutesToLabel(duration)}</div>
+    ${train.guaranteed ? `<div class="badges"><span class="badge guaranteed">Garantito in sciopero</span></div>` : ""}
     <div class="route-list">${routeHtml}</div>
   `;
 }
@@ -203,7 +374,7 @@ function initArrivalTab() {
   arrivalTo.addEventListener("change", renderArrivalResult);
 }
 
-// ---------- Tab 3: orario completo ----------
+// ---------- Tab 4: orario completo ----------
 
 const fullDirection = document.getElementById("full-direction");
 const fullList = document.getElementById("full-list");
@@ -246,8 +417,13 @@ async function init() {
 
   initTabs();
   initNextTab();
+  initSearchTab();
   initArrivalTab();
   initFullTab();
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
 }
 
 init();

@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cumana</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +19,7 @@
 
     <nav class="tabs" role="tablist">
       <button class="tab-btn active" data-tab="next" role="tab" aria-selected="true">Prossimo treno</button>
+      <button class="tab-btn" data-tab="search" role="tab" aria-selected="false">Cerca tratta</button>
       <button class="tab-btn" data-tab="arrival" role="tab" aria-selected="false">Calcola arrivo</button>
       <button class="tab-btn" data-tab="full" role="tab" aria-selected="false">Orario completo</button>
     </nav>
@@ -39,7 +46,26 @@
       </details>
     </section>
 
-    <!-- TAB 2: calcola arrivo -->
+    <!-- TAB 2: cerca tratta (da -> a diretto) -->
+    <section id="tab-search" class="tab-panel">
+      <div class="field">
+        <label for="search-from">Da</label>
+        <select id="search-from"></select>
+      </div>
+      <div class="field">
+        <label for="search-to">A</label>
+        <select id="search-to"></select>
+      </div>
+
+      <div id="search-result" class="result" aria-live="polite"></div>
+
+      <details id="search-upcoming">
+        <summary>Prossime corse utili</summary>
+        <ul id="search-upcoming-list" class="chip-list"></ul>
+      </details>
+    </section>
+
+    <!-- TAB 3: calcola arrivo -->
     <section id="tab-arrival" class="tab-panel">
       <div class="field">
         <label for="arrival-direction">Direzione</label>
@@ -64,7 +90,7 @@
       <div id="arrival-result" class="result" aria-live="polite"></div>
     </section>
 
-    <!-- TAB 3: orario completo -->
+    <!-- TAB 4: orario completo -->
     <section id="tab-full" class="tab-panel">
       <div class="field">
         <label for="full-direction">Direzione</label>

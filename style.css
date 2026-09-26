@@ -44,6 +44,7 @@ h1 {
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 20px;
   background: #1f232c;
@@ -52,13 +53,13 @@ h1 {
 }
 
 .tab-btn {
-  flex: 1;
+  flex: 1 1 40%;
   padding: 9px 6px;
   background: transparent;
   border: none;
   border-radius: 8px;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
@@ -225,6 +226,59 @@ summary {
 .route-list .stop.endpoint {
   color: var(--text);
   font-weight: 600;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.badge.partial {
+  background: rgba(255, 106, 0, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(255, 106, 0, 0.4);
+}
+
+.badge.guaranteed {
+  background: rgba(80, 200, 120, 0.15);
+  color: #6fe0a0;
+  border: 1px solid rgba(80, 200, 120, 0.4);
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0 0 8px;
+  line-height: 1;
+}
+
+.star-btn.active {
+  color: var(--accent);
+}
+
+.field-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.field-row .field {
+  flex: 1;
+  margin-bottom: 0;
 }
 
 footer {
