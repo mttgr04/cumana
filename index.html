@@ -57,10 +57,20 @@
         <select id="search-to"></select>
       </div>
 
+      <div class="mode-toggle" role="tablist">
+        <button class="mode-btn active" data-mode="now" role="tab" aria-selected="true">Prossima corsa</button>
+        <button class="mode-btn" data-mode="deadline" role="tab" aria-selected="false">Arriva entro le</button>
+      </div>
+
+      <div class="field" id="search-deadline-field" hidden>
+        <label for="search-deadline">Orario di arrivo desiderato</label>
+        <input type="time" id="search-deadline">
+      </div>
+
       <div id="search-result" class="result" aria-live="polite"></div>
 
       <details id="search-upcoming">
-        <summary>Prossime corse utili</summary>
+        <summary id="search-upcoming-summary">Prossime corse utili</summary>
         <ul id="search-upcoming-list" class="chip-list"></ul>
       </details>
     </section>

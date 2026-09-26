@@ -159,6 +159,12 @@ const searchFrom = document.getElementById("search-from");
 const searchTo = document.getElementById("search-to");
 const searchResult = document.getElementById("search-result");
 const searchUpcomingList = document.getElementById("search-upcoming-list");
+const searchUpcomingSummary = document.getElementById("search-upcoming-summary");
+const searchDeadlineField = document.getElementById("search-deadline-field");
+const searchDeadlineInput = document.getElementById("search-deadline");
+const modeButtons = document.querySelectorAll(".mode-btn");
+
+let searchMode = "now";
 
 function canonicalOrder() {
   return data.directions.MT.stationsOrder;
@@ -206,27 +212,17 @@ function candidateTrains(from, to) {
   return results;
 }
 
-function renderSearch() {
-  const from = searchFrom.value;
-  const to = searchTo.value;
-  if (!from || !to || from === to) return;
+function renderSearchNow(from, to, future) {
+  searchUpcomingSummary.textContent = "Prossime corse utili";
 
-  const all = candidateTrains(from, to);
-  const now = new Date();
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
-  const upcoming = all.filter((r) => timeToMinutes(r.depTime) >= nowMinutes);
-
-  searchUpcomingList.innerHTML = "";
-
-  if (upcoming.length === 0) {
-    const firstTomorrow = all[0];
-    searchResult.innerHTML = `<div class="none">Nessuna corsa utile oggi da ${from} ad ${to}.<br>${
-      firstTomorrow ? `La prima di domani parte alle <strong>${firstTomorrow.depTime}</strong>.` : ""
-    }</div>`;
+  if (future.length === 0) {
+    searchResult.innerHTML = `<div class="none">Nessuna corsa utile oggi da ${from} ad ${to}.</div>`;
     return;
   }
 
-  const next = upcoming[0];
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const next = future[0];
   const waitMins = timeToMinutes(next.depTime) - nowMinutes;
   const duration = timeToMinutes(next.arrTime) - timeToMinutes(next.depTime);
 
@@ -237,11 +233,95 @@ function renderSearch() {
     ${routeBadgesHtml(next.dirKey, next.train)}
   `;
 
-  upcoming.slice(1, 6).forEach((r) => {
+  future.slice(1, 6).forEach((r) => {
     const li = document.createElement("li");
     li.textContent = `${r.depTime} → ${r.arrTime}`;
     searchUpcomingList.appendChild(li);
   });
+}
+
+function renderSearchDeadline(from, to, future) {
+  searchUpcomingSummary.textContent = "Altre corse utili";
+
+  const deadlineValue = searchDeadlineInput.value;
+  if (!deadlineValue) {
+    searchResult.innerHTML = `<div class="none">Scegli l'orario entro cui vuoi arrivare a ${to}.</div>`;
+    return;
+  }
+
+  const deadlineMinutes = timeToMinutes(deadlineValue);
+  const valid = future.filter((r) => timeToMinutes(r.arrTime) <= deadlineMinutes);
+
+  if (valid.length === 0) {
+    const earliestArrival = future[0];
+    searchResult.innerHTML = `<div class="none">Nessuna corsa da ${from} arriva a ${to} entro le ${deadlineValue}.<br>${
+      earliestArrival
+        ? `La più veloce arriva alle <strong>${earliestArrival.arrTime}</strong> (partenza ${earliestArrival.depTime}).`
+        : `Non ci sono più corse utili oggi da ${from}.`
+    }</div>`;
+    return;
+  }
+
+  const best = valid[valid.length - 1];
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const waitMins = timeToMinutes(best.depTime) - nowMinutes;
+  const duration = timeToMinutes(best.arrTime) - timeToMinutes(best.depTime);
+
+  searchResult.innerHTML = `
+    <div class="big-time">${best.depTime}</div>
+    <div class="wait">ultima corsa utile da ${from} · tra ${minutesToLabel(waitMins)}</div>
+    <div class="leg-summary">Arrivo a ${to} alle ${best.arrTime} (entro le ${deadlineValue}) · durata ${minutesToLabel(duration)}</div>
+    ${routeBadgesHtml(best.dirKey, best.train)}
+  `;
+
+  valid
+    .slice(0, -1)
+    .slice(-5)
+    .forEach((r) => {
+      const li = document.createElement("li");
+      li.textContent = `${r.depTime} → ${r.arrTime}`;
+      searchUpcomingList.appendChild(li);
+    });
+}
+
+function renderSearch() {
+  const from = searchFrom.value;
+  const to = searchTo.value;
+  if (!from || !to || from === to) return;
+
+  const all = candidateTrains(from, to);
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  const future = all.filter((r) => timeToMinutes(r.depTime) >= nowMinutes);
+
+  searchUpcomingList.innerHTML = "";
+
+  if (searchMode === "deadline") {
+    renderSearchDeadline(from, to, future);
+  } else {
+    renderSearchNow(from, to, future);
+  }
+}
+
+function defaultDeadline() {
+  const now = new Date();
+  const mins = now.getHours() * 60 + now.getMinutes() + 60;
+  const h = Math.floor(mins / 60) % 24;
+  const m = mins % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+}
+
+function setSearchMode(mode) {
+  searchMode = mode;
+  modeButtons.forEach((b) => {
+    const active = b.dataset.mode === mode;
+    b.classList.toggle("active", active);
+    b.setAttribute("aria-selected", String(active));
+  });
+  searchDeadlineField.hidden = mode !== "deadline";
+  savePrefs({ searchMode: mode });
+  renderSearch();
 }
 
 function initSearchTab() {
@@ -252,7 +332,9 @@ function initSearchTab() {
   if (prefs.searchTo && canonicalOrder().includes(prefs.searchTo) && prefs.searchTo !== searchFrom.value) {
     searchTo.value = prefs.searchTo;
   }
-  renderSearch();
+
+  searchDeadlineInput.value = prefs.searchDeadline || defaultDeadline();
+  setSearchMode(prefs.searchMode === "deadline" ? "deadline" : "now");
 
   searchFrom.addEventListener("change", () => {
     populateSearchTo();
@@ -261,6 +343,11 @@ function initSearchTab() {
   });
   searchTo.addEventListener("change", () => {
     savePrefs({ searchTo: searchTo.value });
+    renderSearch();
+  });
+  modeButtons.forEach((b) => b.addEventListener("click", () => setSearchMode(b.dataset.mode)));
+  searchDeadlineInput.addEventListener("change", () => {
+    savePrefs({ searchDeadline: searchDeadlineInput.value });
     renderSearch();
   });
   setInterval(renderSearch, 30000);
